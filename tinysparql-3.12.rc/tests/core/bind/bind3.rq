@@ -1,0 +1,7 @@
+PREFIX  : <http://example.org/ns#>
+SELECT  ?a ?b (SUBSTR(STR(?x), 0, 15) AS $val)
+WHERE
+    { ?a :integer ?b .
+      BIND ((1 / xsd:double (?b)) AS ?x) .
+    }
+ORDER BY ?x

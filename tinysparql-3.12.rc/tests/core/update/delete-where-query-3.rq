@@ -1,0 +1,1 @@
+SELECT ?s (SUBSTR(STR(?o), 0, 15) AS $val) { ?s example:double ?o }

@@ -1,0 +1,790 @@
+# Kazakh translation for tracker.
+# Copyright (C) 2016 tracker's COPYRIGHT HOLDER
+# This file is distributed under the same license as the tracker package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2016-2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tracker master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/tinysparql/-/issues\n"
+"POT-Creation-Date: 2025-12-10 23:05+0000\n"
+"PO-Revision-Date: 2026-01-11 11:59+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.8\n"
+
+#: src/cli/tracker-endpoint.c:58 src/cli/tracker-export.c:46
+#: src/cli/tracker-import.c:46 src/cli/tracker-introspect.c:98
+#: src/cli/tracker-query.c:52 src/cli/tracker-sql.c:45
+msgid "Location of the database"
+msgstr "Дерекқор орны"
+
+#: src/cli/tracker-endpoint.c:59 src/cli/tracker-endpoint.c:71
+msgid "DIR"
+msgstr "БУМА"
+
+#: src/cli/tracker-endpoint.c:62
+msgid "Specify the DBus name of this endpoint"
+msgstr "Осы соңғы нүктенің DBus атын көрсетіңіз"
+
+#: src/cli/tracker-endpoint.c:63 src/cli/tracker-endpoint.c:67
+msgid "NAME"
+msgstr "АТЫ"
+
+#: src/cli/tracker-endpoint.c:66
+msgid "Specify the ontology name used in this endpoint"
+msgstr "Осы соңғы нүктеде қолданылатын онтология атын көрсетіңіз"
+
+#: src/cli/tracker-endpoint.c:70
+msgid "Specify a path to an ontology to be used in this endpoint"
+msgstr "Осы соңғы нүктеде қолданылатын онтологияға баратын жолды көрсетіңіз"
+
+#: src/cli/tracker-endpoint.c:74
+msgid "HTTP port"
+msgstr "HTTP порты"
+
+#: src/cli/tracker-endpoint.c:78
+msgid "Whether to only allow HTTP connections in the loopback device"
+msgstr ""
+"HTTP байланыстарын тек ішкі тұйықталу (loopback) құрылғысында рұқсат ету ма"
+
+#: src/cli/tracker-endpoint.c:82
+msgid "Use session bus"
+msgstr "Сессия шинасын қолдану"
+
+#: src/cli/tracker-endpoint.c:86
+msgid "Use system bus"
+msgstr "Жүйелік шинаны қолдану"
+
+#: src/cli/tracker-endpoint.c:90
+msgid "List SPARQL endpoints available in DBus"
+msgstr "DBus-та қолжетімді SPARQL соңғы нүктелерін тізімдеу"
+
+#: src/cli/tracker-endpoint.c:94
+msgid "List network-local HTTP SPARQL endpoints"
+msgstr "Жергілікті желідегі HTTP SPARQL соңғы нүктелерін тізімдеу"
+
+#. TRANSLATORS: these are commandline arguments
+#: src/cli/tracker-endpoint.c:115
+msgid "--list can only be used with --session or --system"
+msgstr ""
+"--list опциясын тек --session немесе --system опцияларымен бірге қолдануға "
+"болады"
+
+#. TRANSLATORS: those are commandline arguments
+#: src/cli/tracker-endpoint.c:121
+msgid "One “ontology” or “ontology-path” option should be provided"
+msgstr "«ontology» немесе «ontology-path» опцияларының бірі көрсетілуі тиіс"
+
+#. TRANSLATORS: those are commandline arguments
+#: src/cli/tracker-endpoint.c:127
+msgid "--http-port cannot be used with --dbus-service"
+msgstr ""
+"--http-port опциясын --dbus-service опциясымен бірге қолдануға болмайды"
+
+#: src/cli/tracker-endpoint.c:198
+#, c-format
+msgid "Creating HTTP endpoint at %s…"
+msgstr "%s адресінде HTTP соңғы нүктесі жасалуда…"
+
+#: src/cli/tracker-endpoint.c:218 src/cli/tracker-endpoint.c:281
+#: src/cli/tracker-webide.c:100
+msgid "Listening to SPARQL commands. Press Ctrl-C to stop."
+msgstr "SPARQL командалары тыңдалуда. Тоқтату үшін Ctrl-C басыңыз."
+
+#. Carriage return, so we paper over the ^C
+#: src/cli/tracker-endpoint.c:226 src/cli/tracker-endpoint.c:296
+#: src/cli/tracker-webide.c:105
+msgid "Closing connection…"
+msgstr "Байланысты жабу…"
+
+#: src/cli/tracker-endpoint.c:241
+#, c-format
+msgid "Creating endpoint at %s…"
+msgstr "%s адресінде соңғы нүкте жасалуда…"
+
+#: src/cli/tracker-endpoint.c:277
+msgid "Could not own DBus name"
+msgstr "DBus атын иелену мүмкін емес"
+
+#: src/cli/tracker-endpoint.c:291
+msgid "DBus name lost"
+msgstr "DBus атауы жоғалған"
+
+#: src/cli/tracker-endpoint.c:608 src/cli/tracker-export.c:214
+#: src/cli/tracker-import.c:196 src/cli/tracker-introspect.c:1025
+#: src/cli/tracker-query.c:486 src/cli/tracker-sql.c:239
+#: src/cli/tracker-webide.c:122 src/portal/tracker-main.c:108
+msgid "Unrecognized options"
+msgstr "Танылмаған параметрлер"
+
+#: src/cli/tracker-endpoint.c:652
+#, c-format
+msgid "Opening database at %s…"
+msgstr "%s адресіндегі дерекқор ашылуда…"
+
+#: src/cli/tracker-endpoint.c:655
+#, c-format
+msgid "Creating in-memory database"
+msgstr "Жадтағы дерекқорды жасау"
+
+#: src/cli/tracker-endpoint.c:683
+#, c-format
+msgid ""
+"New database created. Use the “--dbus-service” option to share this "
+"database on a message bus."
+msgstr ""
+"Жаңа деректер базасы жасалды. Осы деректер базасын хабарламалар шинасында "
+"бөлісу үшін «--dbus-service» опциясын қолданыңыз."
+
+#: src/cli/tracker-export.c:47 src/cli/tracker-import.c:47
+#: src/cli/tracker-import.c:62 src/cli/tracker-import.c:63
+#: src/cli/tracker-introspect.c:99 src/cli/tracker-query.c:53
+#: src/cli/tracker-query.c:65 src/cli/tracker-sql.c:46
+#: src/cli/tracker-sql.c:50
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+#: src/cli/tracker-export.c:50 src/cli/tracker-import.c:50
+#: src/cli/tracker-introspect.c:102 src/cli/tracker-query.c:56
+msgid "Connects to a DBus service"
+msgstr "DBus қызметіне қосылады"
+
+#: src/cli/tracker-export.c:51 src/cli/tracker-import.c:51
+#: src/cli/tracker-introspect.c:103 src/cli/tracker-query.c:57
+msgid "DBus service name"
+msgstr "DBus қызметінің аты"
+
+#: src/cli/tracker-export.c:54
+msgid "Output results format: “turtle”, “trig” or “json-ld”"
+msgstr "Шығыс нәтижелерінің пішімі: «turtle», «trig» немесе «json-ld»"
+
+#: src/cli/tracker-export.c:55
+msgid "RDF_FORMAT"
+msgstr "RDF_ПІШІМІ"
+
+#: src/cli/tracker-export.c:58 src/cli/tracker-import.c:54
+#: src/cli/tracker-introspect.c:106 src/cli/tracker-query.c:60
+msgid "Connects to a remote service"
+msgstr "Қашықтағы қызметке қосылады"
+
+#: src/cli/tracker-export.c:59 src/cli/tracker-import.c:55
+#: src/cli/tracker-introspect.c:107 src/cli/tracker-query.c:61
+msgid "Remote service URI"
+msgstr "Қашықтағы қызмет URI-ы"
+
+#: src/cli/tracker-export.c:62
+msgid "Output TriG format which includes named graph information"
+msgstr "Аталған граф ақпаратын қамтитын шығыс TriG пішімі"
+
+#: src/cli/tracker-export.c:66 src/cli/tracker-export.c:67
+msgid "IRI"
+msgstr "IRI"
+
+#. TRANSLATORS: Those are commandline arguments
+#: src/cli/tracker-export.c:92 src/cli/tracker-import.c:88
+#: src/cli/tracker-introspect.c:164 src/cli/tracker-query.c:105
+#, c-format
+msgid ""
+"Specify one “--database”, “--dbus-service” or “--remote-service” option"
+msgstr ""
+"«--database», «--dbus-service» немесе «--remote-service» опцияларының бірін "
+"көрсетіңіз"
+
+#: src/cli/tracker-export.c:116 src/cli/tracker-export.c:137
+#: src/cli/tracker-import.c:125 src/cli/tracker-introspect.c:829
+#: src/cli/tracker-query.c:345
+msgid "No error given"
+msgstr "Қате көрсетілмеген"
+
+#: src/cli/tracker-export.c:136 src/cli/tracker-import.c:124
+#: src/cli/tracker-introspect.c:828 src/cli/tracker-query.c:344
+msgid "Could not establish a connection to Tracker"
+msgstr "Трекерге қосылу мүмкін болмады"
+
+#: src/cli/tracker-export.c:179
+#, c-format
+msgid "Unsupported serialization format “%s”\n"
+msgstr "Қолдау көрсетілмейтін «%s» сериализация пішімі\n"
+
+#: src/cli/tracker-import.c:58
+msgid "Read TriG format which includes named graph information"
+msgstr "Атаулы графтар ақпаратын қамтитын TriG пішімін оқу"
+
+#: src/cli/tracker-import.c:103 src/cli/tracker-import.c:141
+msgid "Could not run import"
+msgstr "Импортты орындау мүмкін емес"
+
+#: src/cli/tracker-introspect.c:110
+msgid "Lists all available classes"
+msgstr "Барлық қолжетімді кластарды тізімдейді"
+
+#: src/cli/tracker-introspect.c:114
+msgid "Lists all available prefixes"
+msgstr "Барлық қолжетімді префикстерді тізімдейді"
+
+#: src/cli/tracker-introspect.c:118
+msgid "Lists all classes which notify changes in the database"
+msgstr ""
+"Дерекқордағы өзгерістер туралы хабарлайтын барлық кластарды тізімдейді"
+
+#: src/cli/tracker-introspect.c:122
+msgid "List indexes used in database to improve performance"
+msgstr "Өнімділікті арттыру үшін дерекқорда қолданылатын индекстерді тізімдеу"
+
+#: src/cli/tracker-introspect.c:125
+msgid "Retrieve all named graphs"
+msgstr "Барлық атаулы графтарды алу"
+
+#: src/cli/tracker-introspect.c:129
+msgid ""
+"Describe subclasses, superclasses (can be used with -s to highlight parts "
+"of the tree and -p to show properties)"
+msgstr ""
+"Субкластарды, суперкластарды сипаттау (ағаштың бөліктерін ерекшелеу үшін -s "
+"және қасиеттерді көрсету үшін -p аргументтерімен қолдануға болады)"
+
+#: src/cli/tracker-introspect.c:130 src/cli/tracker-introspect.c:134
+msgid "CLASS"
+msgstr "КЛАСС"
+
+#: src/cli/tracker-introspect.c:133
+msgid "Lists all available properties"
+msgstr "Барлық қолжетімді қасиеттерді тізімдейді"
+
+#: src/cli/tracker-introspect.c:137
+msgid ""
+"Search for a class or property and display more information (e.g. Document)"
+msgstr ""
+"Класты немесе қасиетті іздеу және көбірек ақпаратты көрсету (мысалы, "
+"Document)"
+
+#: src/cli/tracker-introspect.c:138
+msgid "CLASS/PROPERTY"
+msgstr "КЛАСС/ҚАСИЕТ"
+
+#: src/cli/tracker-introspect.c:716
+msgid "Could not create tree: subclass query failed"
+msgstr "Ағашты жасау мүмкін емес: ішкі класс сұранымы сәтсіз аяқталды"
+
+#: src/cli/tracker-introspect.c:765
+msgid "Could not create tree: class properties query failed"
+msgstr ""
+"Ағашты жасау мүмкін емес: класс қасиеттерінің сұранымы сәтсіз аяқталды"
+
+#: src/cli/tracker-introspect.c:848
+msgid "Could not search classes"
+msgstr "Кластарды іздеу мүмкін емес"
+
+#: src/cli/tracker-introspect.c:856 src/cli/tracker-introspect.c:940
+msgid "Classes"
+msgstr "Кластар"
+
+#: src/cli/tracker-introspect.c:868
+msgid "Could not search properties"
+msgstr "Қасиеттерді іздеу мүмкін емес"
+
+#: src/cli/tracker-introspect.c:876 src/cli/tracker-introspect.c:910
+msgid "Properties"
+msgstr "Қасиеттері"
+
+#: src/cli/tracker-introspect.c:902
+msgid "Could not list properties"
+msgstr "Қасиеттерді тізімдеу мүмкін емес"
+
+#: src/cli/tracker-introspect.c:918
+msgid "Namespaces"
+msgstr "Атау кеңістіктері"
+
+#: src/cli/tracker-introspect.c:932
+msgid "Could not list classes"
+msgstr "Кластар тізімін шығару мүмкін емес"
+
+#: src/cli/tracker-introspect.c:952
+msgid "Could not find notify classes"
+msgstr "Хабарландыру кластары табылмады"
+
+#: src/cli/tracker-introspect.c:960
+msgid "Notifies"
+msgstr "Хабарландырулар"
+
+#: src/cli/tracker-introspect.c:972
+msgid "Could not find indexed properties"
+msgstr "Индекстелген қасиеттер табылмады"
+
+#: src/cli/tracker-introspect.c:980
+msgid "Indexes"
+msgstr "Индекстер"
+
+#: src/cli/tracker-introspect.c:992
+msgid "Could not list named graphs"
+msgstr "Атаулы графтарды тізімдеу мүмкін емес"
+
+#: src/cli/tracker-introspect.c:1000
+msgid "Named graphs"
+msgstr "Атаулы графтар"
+
+#: src/cli/tracker-introspect.c:1034
+msgid ""
+"The --list-properties argument can only be empty when used with the --tree "
+"argument"
+msgstr ""
+"--list-properties аргументі тек --tree аргументімен бірге қолданылғанда "
+"ғана бос болуы мүмкін"
+
+#: src/cli/tracker-main.c:69
+msgid "Get help on how to use TinySPARQL and any of these commands"
+msgstr ""
+"TinySPARQL және осы командалардың кез келгенін қолдану туралы көмек алу"
+
+#: src/cli/tracker-main.c:70
+msgid "Create a SPARQL endpoint"
+msgstr "SPARQL соңғы нүктесін жасау"
+
+#: src/cli/tracker-main.c:71
+msgid "Export data from a TinySPARQL database"
+msgstr "TinySPARQL дерекқорынан деректерді экспорттау"
+
+#: src/cli/tracker-main.c:72
+msgid "Import data into a TinySPARQL database"
+msgstr "TinySPARQL дерекқорына деректерді импорттау"
+
+#: src/cli/tracker-main.c:73
+msgid "Introspect a SPARQL endpoint"
+msgstr "SPARQL соңғы нүктесін интроспекциялау"
+
+#: src/cli/tracker-main.c:74
+msgid "Query and update the index using SPARQL"
+msgstr "SPARQL көмегімен index-ті сұрау және жаңарту"
+
+#: src/cli/tracker-main.c:75
+msgid "Create a Web IDE to query local databases"
+msgstr "Жергілікті дерекқорларды сұрау үшін Web IDE жасау"
+
+#: src/cli/tracker-main.c:92
+msgid "Available tinysparql commands are:"
+msgstr "Қолжетімді tinysparql командалары:"
+
+#: src/cli/tracker-main.c:111
+msgid "See “tinysparql help <command>” to read about a specific subcommand."
+msgstr ""
+"Белгілі бір ішкі команда туралы оқу үшін «tinysparql help <command>» "
+"қараңыз."
+
+#: src/cli/tracker-main.c:154
+#, c-format
+msgid "“%s” is not a tinysparql command. See “tinysparql --help”"
+msgstr "«%s» — tinysparql командасы емес. «tinysparql --help» қараңыз"
+
+#: src/cli/tracker-query.c:64
+msgid "Path to use to run a query or update from file"
+msgstr "Файлдан сұрауды орындау немесе жаңарту үшін пайдаланылатын жол"
+
+#: src/cli/tracker-query.c:68
+msgid "SPARQL query"
+msgstr "SPARQL сұранымы"
+
+#: src/cli/tracker-query.c:69
+msgid "SPARQL"
+msgstr "SPARQL"
+
+#: src/cli/tracker-query.c:72
+msgid "This is used with --query and for database updates only."
+msgstr ""
+"Бұл тек --query опциясымен және дерекқорды жаңарту үшін пайдаланылады."
+
+#: src/cli/tracker-query.c:76
+msgid "Provides an argument for a query parameter."
+msgstr "Сұрау параметрі үшін аргумент береді."
+
+#: src/cli/tracker-query.c:77
+msgid "PARAMETER:TYPE:VALUE"
+msgstr "ПАРАМЕТР:ТИП:МӘН"
+
+#. To translators: This is to say there are no
+#. * search results found. We use a "foo: None"
+#. * with multiple print statements, where "foo"
+#. * may be Music or Images, etc.
+#: src/cli/tracker-query.c:214 src/cli/tracker-query.c:262
+msgid "None"
+msgstr "Ешнәрсе"
+
+#: src/cli/tracker-query.c:282
+#, c-format
+msgid "Invalid argument string %s"
+msgstr "%s аргумент жолы жарамсыз"
+
+#: src/cli/tracker-query.c:292
+#, c-format
+msgid "Invalid parameter type for argument %s"
+msgstr "%s аргументі үшін параметр типі жарамсыз"
+
+#: src/cli/tracker-query.c:360
+msgid "Could not get UTF-8 path from path"
+msgstr "Жолдан UTF-8 жолын алу мүмкін болмады"
+
+#: src/cli/tracker-query.c:372 src/cli/tracker-sql.c:75
+msgid "Could not read file"
+msgstr "Файлды оқу мүмкін емес"
+
+#: src/cli/tracker-query.c:403
+msgid "Could not run update"
+msgstr "Жаңарту жөнелту мүмкін емес"
+
+#: src/cli/tracker-query.c:410
+msgid "Done"
+msgstr "Болды"
+
+#: src/cli/tracker-query.c:428 src/cli/tracker-sql.c:131
+#: src/cli/tracker-sql.c:164
+msgid "Could not run query"
+msgstr "Сұранымды жөнелту мүмкін емес"
+
+#: src/cli/tracker-query.c:437 src/cli/tracker-query.c:439
+msgid "No results found matching your query"
+msgstr "Сұрауыңызға сәйкес нәтижелер табылмады"
+
+#: src/cli/tracker-query.c:437 src/cli/tracker-query.c:439
+#: src/cli/tracker-sql.c:138
+msgid "Results"
+msgstr "Нәтижелер"
+
+#: src/cli/tracker-query.c:498 src/cli/tracker-sql.c:250
+msgid "File and query can not be used together"
+msgstr "Файлды және сұрауды бірге пайдалануға болмайды"
+
+#: src/cli/tracker-sql.c:49
+msgid "Path to use to run a query from file"
+msgstr "Файлдан сұрауды орындау үшін пайдаланылатын жол"
+
+#: src/cli/tracker-sql.c:53
+msgid "SQL query"
+msgstr "SQL сұранымы"
+
+#: src/cli/tracker-sql.c:54
+msgid "SQL"
+msgstr "SQL"
+
+#: src/cli/tracker-sql.c:108
+msgid "Failed to initialize data manager"
+msgstr "Деректер менеджерін инициализациялау сәтсіз аяқталды"
+
+#: src/cli/tracker-sql.c:172
+msgid "Empty result set"
+msgstr "Бос нәтиже жиыны"
+
+#: src/cli/tracker-sql.c:248
+msgid "A database path must be specified"
+msgstr "Дерекқор жолы көрсетілуі тиіс"
+
+#. Translators: this is a HTTP port
+#: src/cli/tracker-webide.c:40
+msgid "Port to listen on"
+msgstr "Тыңдалатын порт"
+
+#. Translators: this is a HTTP port
+#: src/cli/tracker-webide.c:50
+msgid "Port not specified"
+msgstr "Порт көрсетілмеген"
+
+#. Translators: This will point to a local HTTP address
+#: src/cli/tracker-webide.c:81
+#, c-format
+msgid "Creating Web IDE at %s…"
+msgstr "%s адресінде Web IDE жасалуда…"
+
+#. Translators: this is a '|' (U+007C) separated list of common
+#. * title beginnings. Meant to be skipped for sorting purposes,
+#. * case doesn't matter. Given English media is quite common, it is
+#. * advised to leave the untranslated articles in addition to
+#. * the translated ones.
+#: src/libtinysparql/core/tracker-collation.c:116
+msgid "the|a|an"
+msgstr "the|a|an"
+
+#: src/portal/tracker-main.c:51
+msgid "Version"
+msgstr "Нұсқасы"
+
+#~ msgid "unknown time"
+#~ msgstr "белгісіз уақыт"
+
+#~ msgid "less than one second"
+#~ msgstr "бір секундтан кем"
+
+#, c-format
+#~ msgid " %dd"
+#~ msgstr " %dк"
+
+#, c-format
+#~ msgid " %2.2dh"
+#~ msgstr " %2.2dсағ"
+
+#, c-format
+#~ msgid " %2.2dm"
+#~ msgstr " %2.2dм"
+
+#, c-format
+#~ msgid " %2.2ds"
+#~ msgstr " %2.2dс"
+
+#, c-format
+#~ msgid " %d day"
+#~ msgid_plural " %d days"
+#~ msgstr[0] " %d күн"
+
+#, c-format
+#~ msgid " %2.2d hour"
+#~ msgid_plural " %2.2d hours"
+#~ msgstr[0] " %2.2d сағат"
+
+#, c-format
+#~ msgid " %2.2d minute"
+#~ msgid_plural " %2.2d minutes"
+#~ msgstr[0] " %2.2d минут"
+
+#, c-format
+#~ msgid " %2.2d second"
+#~ msgid_plural " %2.2d seconds"
+#~ msgstr[0] " %2.2d секунд"
+
+#~ msgid "PROPERTY"
+#~ msgstr "ҚАСИЕТ"
+
+#~ msgid "No class prefixes were found"
+#~ msgstr "Кластар префикстері табылмады"
+
+#~ msgid "Prefixes"
+#~ msgstr "Префикстер"
+
+#~ msgid "No properties were found"
+#~ msgstr "Қасиеттер табылмады"
+
+#~ msgid "Operation not supported"
+#~ msgstr "Әрекетке қолдау жоқ"
+
+#~ msgid "Unavailable"
+#~ msgstr "Қолжетерсіз"
+
+#~ msgid "Paused"
+#~ msgstr "Аялдатылған"
+
+#~ msgid "REASON"
+#~ msgstr "СЕБЕБІ"
+
+#~ msgid "COOKIE"
+#~ msgstr "COOKIE"
+
+#~ msgid "%s remaining"
+#~ msgstr "%s қалды"
+
+#~ msgid "[y|N]"
+#~ msgstr "[y|N]"
+
+#~ msgid "yes"
+#~ msgstr "иә"
+
+#~ msgid "Search for files"
+#~ msgstr "Файлдарды іздеу"
+
+#~ msgid "Search for folders"
+#~ msgstr "Бумаларды іздеу"
+
+#~ msgid "Search for music files"
+#~ msgstr "Музыка файлдарын іздеу"
+
+#~ msgid "Search for image files"
+#~ msgstr "Сурет файлдарын іздеу"
+
+#~ msgid "Search for video files"
+#~ msgstr "Видео файлдарын іздеу"
+
+#~ msgid "Search for document files"
+#~ msgstr "Құжат файлдарын іздеу"
+
+#~ msgid "Search for emails"
+#~ msgstr "Эл. пошта хаттары іздеу"
+
+#~ msgid "Search for contacts"
+#~ msgstr "Контакттарды іздеу"
+
+#~ msgid "No contacts were found"
+#~ msgstr "Контакттар табылмады"
+
+#~ msgid "Contacts"
+#~ msgstr "Контакттар"
+
+#~ msgid "No name"
+#~ msgstr "Аты жоқ"
+
+#~ msgid "No E-mail address"
+#~ msgstr "Эл. пошта адрестері табылмады"
+
+#~ msgid "Emails"
+#~ msgstr "Эл. пошта хаттары"
+
+#~ msgid "No files were found"
+#~ msgstr "Файлдар табылмады"
+
+#~ msgid "Files"
+#~ msgstr "Файлдар"
+
+#~ msgid "No artists were found"
+#~ msgstr "Әртістер табылмады"
+
+#~ msgid "Artists"
+#~ msgstr "Әртістер"
+
+#~ msgid "No music was found"
+#~ msgstr "Музыка табылмады"
+
+#~ msgid "Albums"
+#~ msgstr "Альбомдар"
+
+#~ msgid "No bookmarks were found"
+#~ msgstr "Бетбелгілер табылмады"
+
+#~ msgid "Bookmarks"
+#~ msgstr "Бетбелгілер"
+
+#~ msgid "No feeds were found"
+#~ msgstr "Таспалар табылмады"
+
+#~ msgid "Feeds"
+#~ msgstr "Таспалар"
+
+#~ msgid "Software"
+#~ msgstr "Бағд. қамтамасы"
+
+#~ msgid "No statistics available"
+#~ msgstr "Статистика қолжетерсіз"
+
+#~ msgid "Statistics:"
+#~ msgstr "Статистика:"
+
+#~ msgid "Disk Information"
+#~ msgstr "Диск ақпараты"
+
+#~ msgid "Configuration"
+#~ msgstr "Баптаулар"
+
+#~ msgid "Data Statistics"
+#~ msgstr "Деректер статистикасы"
+
+#~ msgid "Could not get statistics"
+#~ msgstr "Статистиканы алу мүмкін емес"
+
+#~ msgid "No statistics were available"
+#~ msgstr "Статистика қолжетерсіз"
+
+#~ msgid "Database is currently empty"
+#~ msgstr "Дерекқор бос болып тұр"
+
+#~ msgid "%d file"
+#~ msgid_plural "%d files"
+#~ msgstr[0] "%d файл"
+
+#~ msgid "%d folder"
+#~ msgid_plural "%d folders"
+#~ msgstr[0] "%d бума"
+
+#~ msgid "FILTER"
+#~ msgstr "СҮЗГІ"
+
+#~ msgid "TAG"
+#~ msgstr "ТЕГ"
+
+#~ msgid "STRING"
+#~ msgstr "ЖОЛ"
+
+#~ msgid "FILE…"
+#~ msgstr "ФАЙЛ…"
+
+#~ msgid "FILE [FILE…]"
+#~ msgstr "ФАЙЛ [ФАЙЛ…]"
+
+#~ msgid "Applications"
+#~ msgstr "Қолданбалар"
+
+#~ msgid "File System"
+#~ msgstr "Файлдық жүйе"
+
+#~ msgid "Yes"
+#~ msgstr "Иә"
+
+#~ msgid "RSS/ATOM Feeds"
+#~ msgstr "RSS/ATOM таспалары"
+
+#~ msgid "Add feed"
+#~ msgstr "Таспаны қосу"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid "Tracker"
+#~ msgstr "Tracker"
+
+#~ msgid "Tags"
+#~ msgstr "Тегтер"
+
+#~ msgid "_Search:"
+#~ msgstr "І_здеу:"
+
+#~ msgid "Print version"
+#~ msgstr "Нұсқа ақпаратын шығару"
+
+#~ msgid "Name"
+#~ msgstr "Аты"
+
+#~ msgid "Today"
+#~ msgstr "Бүгін"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Ертең"
+
+#~ msgid "Yesterday"
+#~ msgstr "Кеше"
+
+#~ msgid "Size"
+#~ msgstr "Өлшемі"
+
+#~ msgid "Music"
+#~ msgstr "Музыка"
+
+#~ msgid "Images"
+#~ msgstr "Суреттер"
+
+#~ msgid "Videos"
+#~ msgstr "Видеолар"
+
+#~ msgid "Documents"
+#~ msgstr "Құжаттар"
+
+#~ msgid "Mail"
+#~ msgstr "Пошта"
+
+#~ msgid "Loading…"
+#~ msgstr "Жүктеу…"
+
+#~ msgid "Control"
+#~ msgstr "Басқару элементі"
+
+#~ msgid "Directory"
+#~ msgstr "Бума"
+
+#~ msgid "Disabled"
+#~ msgstr "Сөндірулі"
+
+#~ msgid "_Cancel"
+#~ msgstr "Ба_с тарту"
+
+#~ msgid "_OK"
+#~ msgstr "_ОК"
+
+#~ msgid "Select directory"
+#~ msgstr "Буманы таңдау"
